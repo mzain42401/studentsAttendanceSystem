@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdFactCheck } from "react-icons/md";
-import Logo from '../../images/logo.png'
+import Logo from '../../images/Logo.png'
 import Image from 'next/image';
 
 const Attendence = () => {

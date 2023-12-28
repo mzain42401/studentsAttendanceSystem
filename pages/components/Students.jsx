@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { PiStudentFill } from "react-icons/pi";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import Image from 'next/image';
-import Logo from '../../images/logo.png'
+import Logo from '../../images/Logo.png'
 import EditStd from './EditStd';
 import { FaArrowLeft } from "react-icons/fa6";
 
