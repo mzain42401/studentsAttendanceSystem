@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { createContext } from "react";
-import { auth } from "./firebase";
+import { auth, db, dbStorage } from "./firebase";
 
 
 export const AuthContext = createContext()
@@ -17,8 +17,13 @@ const authData = () => {
         })
     }
 
+    const addStdList=()=>{
+        
+    }
+
     return {
-        addStudent
+        addStudent,
+        addStdList
     }
 
 }

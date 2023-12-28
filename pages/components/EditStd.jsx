@@ -4,17 +4,19 @@ import { FaArrowLeft } from "react-icons/fa6";
 const EditStd = ({back}) => {
     return (
         <>
-            <div className="flex  flex-1 flex-col justify-center  px-6   lg:px-8  bg-white">
+      <div className='absolute h-screen w-full backdrop'>
+
+            <div className="absolute right-1/2 translate-x-1/2 bottom-1/2 translate-y-1/2 flex  flex-1 flex-col justify-center  px-6 py-2 lg:px-8 rounded-lg  bg-white w-96 shadow-lg">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm flex">
 
-                    <h2 className="flex items-center mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+                    <h2 className="flex items-center mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                       <span onClick={back} className='mr-5 cursor-pointer'><FaArrowLeft/></span>  Edit Student
                     </h2>
                     
                 </div>
 
-                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form className="space-y-6" onSubmit={(e) => AddnewStd(e)}>
+                <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-sm">
+                    <form className="space-y-2" onSubmit={(e) => AddnewStd(e)}>
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                                 Full Name
@@ -97,7 +99,7 @@ const EditStd = ({back}) => {
                         <div>
                             <button
                                 type="submit"
-                                className="flex w-full justify-center rounded-md bg-[#1C74BB] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#4798db] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1C74BB]"
+                                className="mt-6 flex w-full justify-center rounded-md bg-[#1C74BB] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#4798db] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1C74BB]"
                             >
                                 Done
                             </button>
@@ -106,6 +108,7 @@ const EditStd = ({back}) => {
 
 
                 </div>
+            </div>
             </div>
         </>
     )

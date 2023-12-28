@@ -5,3 +5,8 @@
 body{
   background: #F8F8F8;
 }
+
+.backdrop{
+  background-color: #ffffff22;
+  backdrop-filter: blur(6px);
+}
