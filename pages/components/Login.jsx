@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useContext, useState } from 'react'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/Logo.png'
 import { AuthContext } from '@/firebase/authContext'
 import { useRouter } from 'next/router'
 const Login = () => {
